@@ -1,6 +1,6 @@
 # POKY_BBLAYERS_CONF_VERSION is increased each time build/conf/bblayers.conf
 # changes incompatibly
-POKY_BBLAYERS_CONF_VERSION = "2"
+POKY_BBLAYERS_CONF_VERSION = "1"
 
 BBPATH = "${TOPDIR}"
 BBFILES ?= ""
@@ -17,5 +17,5 @@ BBLAYERS ?= " \
     ${HOME}/yocto/input/poky-zeus/meta-raspberrypi \
     ${HOME}/yocto/input/poky-zeus/meta-security \
     ${HOME}/yocto/input/poky-zeus/meta-jumpnow \
-    ${HOME}/yocto/input/rpi/meta-rpi \
+    ${HOME}/yocto/input/poky-zeus/meta-rpi \
 "
