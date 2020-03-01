@@ -13,6 +13,7 @@ EXTRA_PACKAGES = " \
     xf86-input-evdev \
     matchbox-keyboard \
     xinput-calibrator \
+    raspi-gpio \
 "
 
 WIFI = " \

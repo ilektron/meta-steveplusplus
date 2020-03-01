@@ -1,4 +1,7 @@
 do_deploy_append() {
+    # Remove the vc4 driver
+
+    # Update the config file
     echo "# Enable the iUniker 2.8in Touchscreen" >>${DEPLOYDIR}/bcm2835-bootfiles/config.txt
     echo "gpio=18=op,dh" >> ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
     echo "dtparam=spi=on" >> ${DEPLOYDIR}/bcm2835-bootfiles/config.txt
