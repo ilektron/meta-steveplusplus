@@ -5,9 +5,14 @@ include recipes-core/images/core-image-base.bb
 
 DEPENDS += "bcm2835-bootfiles"
 
+KERNEL_DEVICETREE =+ "overlays/mzdpi.dtbo"
+
 EXTRA_PACKAGES = " \
     openssh \
     dtc \
+    xf86-input-evdev \
+    matchbox-keyboard \
+    xinput-calibrator \
 "
 
 WIFI = " \
